@@ -1,0 +1,39 @@
+
+{ 
+    "one_time": false, 
+    "buttons": [
+    
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Энергетики" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Печать" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Ремонт" 
+        }, 
+        "color": "positive" 
+      }],
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Настройки" 
+        }, 
+        "color": "positive" 
+      }]
+    ] 
+  }

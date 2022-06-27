@@ -1,0 +1,46 @@
+
+{ 
+    "one_time": false, 
+    "buttons": [
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Главное меню" 
+        }, 
+        "color": "positive" 
+      }],
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Регистрация" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Удалить" 
+        }, 
+        "color": "negative" 
+      }], 
+      [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"2\"}", 
+          "label": "Вкл уведомления" 
+        }, 
+        "color": "positive" 
+      }, 
+     { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"3\"}", 
+          "label": "Выкл уведомления" 
+        }, 
+        "color": "negative" 
+      }] 
+    ] 
+  }

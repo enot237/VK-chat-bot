@@ -1,0 +1,55 @@
+
+{
+    "one_time": false,
+    "buttons": [
+        [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Главное меню" 
+        }, 
+        "color": "positive" 
+      }], 
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"2\"}", 
+          "label": "Латте" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"3\"}", 
+          "label": "Латте-карамель" 
+        }, 
+        "color": "positive" 
+      }
+    ], 
+      [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"4\"}", 
+          "label": "Капучино" 
+        }, 
+        "color": "positive" 
+      }, 
+     { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"5\"}", 
+          "label": "Эспрессо" 
+        }, 
+        "color": "positive" 
+      },
+      { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"6\"}", 
+          "label": "Американо" 
+        }, 
+        "color": "positive" 
+      }] 
+    ] 
+  }

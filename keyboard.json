@@ -1,0 +1,13 @@
+{ 
+    "one_time": false, 
+    "buttons": [
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Найти соседа" 
+        }, 
+        "color": "positive" 
+      }]
+    ] 
+  }

@@ -1,0 +1,38 @@
+
+{ 
+    "one_time": true, 
+    "buttons": [
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Сантехника" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Электрика" 
+        }, 
+        "color": "positive" 
+      }], 
+      [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"2\"}", 
+          "label": "Плотника" 
+        }, 
+        "color": "positive" 
+      }, 
+     { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"3\"}", 
+          "label": "Другое" 
+        }, 
+        "color": "positive" 
+      }] 
+    ] 
+  }

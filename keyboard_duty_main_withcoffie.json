@@ -1,0 +1,38 @@
+
+{ 
+    "one_time": false, 
+    "buttons": [
+        [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Зарегестрироваться" 
+        }, 
+        "color": "positive" 
+      }], 
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Кофе" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Ремонт" 
+        }, 
+        "color": "positive" 
+      },
+    { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"1\"}", 
+          "label": "Печать" 
+        }, 
+        "color": "default" 
+      }] 
+    ] 
+  }
