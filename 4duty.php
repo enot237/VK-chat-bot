@@ -172,10 +172,10 @@ $keyboard = file_get_contents("keyboard_duty_main.json");
 elseif($msg_object->message->text=="take order"){
 
     $otvet = "Красавчик, свяжись с заказчиком";
-    // if ($msg_object->user_id=="38936276") {
-    //     $getter = "226462529";}
-    // if ($msg_object->user_id=="226462529") {
-    //     $getter = "38936276";}
+    // if ($msg_object->user_id=="") {
+    //     $getter = "";}
+    // if ($msg_object->user_id=="") {
+    //     $getter = "";}
     // $keyboard = file_get_contents('keyboard_duty_main.json');
     //     $request_params = array( 
     //         'message' => "Заказ выполняют, бро, расслабься",
@@ -197,7 +197,6 @@ elseif($msg_object->message->text=="Печать"){
     Когда его примут, вам придёт оповещение с контактной информацией &#128521;";
     include "conf.php";
     $link = mysqli_connect($host,$login,$pass,$db);
-    // $link=mysqli_connect("a257970.mysql.mchost.ru", "a257970_1", "yD9DY3DNgm2H!", "a257970_1");
         mysqli_query($link, "INSERT INTO print_orders SET client_id=".$data->object->message->peer_id);
         #get the last order id
         $last_order_id = mysqli_insert_id($link);
@@ -342,7 +341,7 @@ elseif(preg_replace("/Печатаю #[0-9]{1,5}/","",$msg_object->message->text
     $phone = $row['phone'];
 
     //send notify to client
-    // if ($data->object->message->peer_id == "38936276") { //если заказ принял человек из гладилки, уточняем пункт выдачи
+    // if ($data->object->message->peer_id == "") { 
     //     $message = "Ваш заказ принят! \nПрямо сейчас вам готов напечатать [id".$data->object->message->peer_id."|".$first_name." ".$last_name."] \nОбратитесь в лс для уточнения пункта выдачи";
     // }
     // else{ //если у человека указан блок, пишем в каком блоке стоит принтер
@@ -470,7 +469,7 @@ elseif($msg_object->message->text=="Онлайн" or $msg_object->message->text=
         $to_table = "printer_owners";
         $otvet .= "Готово, теперь все могут принимать заказы";
     }
-    $sql_select_exceptme = "SELECT * FROM `{$from_table}` WHERE `owner_id` != '38936276'";
+    $sql_select_exceptme = "SELECT * FROM `{$from_table}` WHERE `owner_id` != ''";
     if ($SQL_orders_response = mysqli_query($link, $sql_select_exceptme)) {
         while ($row = mysqli_fetch_row($SQL_orders_response)) {
            mysqli_query($link, "INSERT INTO `{$to_table}` (`prime`, `owner_id`, `owner_block`, `cost`, `phone`, `name`) VALUES ('{$row[0]}','{$row[1]}','{$row[2]}','{$row[3]}','{$row[4]}','{$row[5]}')");
@@ -577,7 +576,7 @@ elseif(in_array($msg_object->message->text, array("Эспрессо","Амери
     $block = explode(".",$domroom)[0];
     $request_params1 = array( 
         'message' => "Заказ в {$block} блок\n{$msg_object->message->text}\nhttps://vk.com/id{$id}\n", 
-        'user_ids' => "id121410429,38936276",  
+        'user_ids' => "",  
         'random_id' => random_int(10000000, 99999999),
         'access_token' => $token, 
         'v' => '5.124'); 
